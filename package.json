@@ -1,0 +1,29 @@
+{
+  "name": "html-webpack-uncss-plugin",
+  "version": "1.0.0",
+  "description": "Remove unused embedded styles",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/csabapalfi/html-webpack-uncss-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "html-webpack-plugin",
+    "uncss",
+    "styles"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csabapalfi/html-webpack-uncss-plugin/issues"
+  },
+  "homepage": "https://github.com/csabapalfi/html-webpack-uncss-plugin",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "uncss": "^0.14.1"
+  }
+}
