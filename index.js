@@ -23,6 +23,7 @@ HtmlWebpackUncssPlugin.prototype.apply = (compiler) => {
         if (error) {
           return callback(error);
         }
+        $('style').slice(1).remove();
         $('style').text(output);
         htmlPluginData.html = $.html();
         return callback(null, htmlPluginData);
