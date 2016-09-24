@@ -14,8 +14,8 @@ HtmlWebpackUncssPlugin.prototype.apply = (compiler) => {
       (data, callback) => {
         const $ = cheerio.load(data.html);
         const styles = [];
-        $('style').each(function() {
-          const style = $(this).html();
+        $('style').map((i, el) => {
+          const style = $(el).html();
           if (style) {
             styles.push(style);
           }
