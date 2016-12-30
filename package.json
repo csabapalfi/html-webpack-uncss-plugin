@@ -27,7 +27,7 @@
     "uncss": "^0.14.1"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "mocha"
   },
   "devDependencies": {
     "chai": "^3.5.0",
