@@ -28,9 +28,7 @@
     "uncss": "^0.14.1"
   },
   "scripts": {
-    "test:snyk": "snyk test",
-    "test:mocha": "mocha",
-    "test": "npm run test:mocha && npm run test:snyk",
+    "test": "mocha",
     "snyk-protect": "snyk protect",
     "prepublish": "npm run snyk-protect"
   },
