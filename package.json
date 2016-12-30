@@ -24,13 +24,19 @@
   "homepage": "https://github.com/csabapalfi/html-webpack-uncss-plugin",
   "dependencies": {
     "cheerio": "^0.22.0",
-    "uncss": "^0.14.1",
-    "snyk": "^1.22.1"
+    "snyk": "^1.22.1",
+    "uncss": "^0.14.1"
   },
   "scripts": {
-    "test": "snyk test",
+    "test:snyk": "snyk test",
+    "test:mocha": "mocha",
+    "test": "npm run test:mocha && npm run test:snyk",
     "snyk-protect": "snyk protect",
     "prepublish": "npm run snyk-protect"
   },
-  "snyk": true
+  "snyk": true,
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
 }
