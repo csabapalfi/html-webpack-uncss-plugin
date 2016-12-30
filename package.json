@@ -24,6 +24,7 @@
   "homepage": "https://github.com/csabapalfi/html-webpack-uncss-plugin",
   "dependencies": {
     "cheerio": "^0.22.0",
+    "tough-cookie": "^2.3.2",
     "uncss": "^0.14.1"
   }
 }
